@@ -123,6 +123,7 @@
                         <outlet property="loginBtn" destination="X9H-hp-10N" id="tV1-je-WWn"/>
                         <outlet property="loginTextField" destination="it7-Yu-M0U" id="xBD-JQ-69K"/>
                         <outlet property="passTextField" destination="qyK-wq-VJs" id="NIz-ap-eOr"/>
+                        <outlet property="switchBtn" destination="1Tl-MJ-iqu" id="gXi-2i-9MG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet var passTextField: UITextField!
     @IBOutlet var loginBtn: UIButton!
     @IBOutlet var switchBtn: UISwitch!
+    var isClicked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,12 @@ class ViewController: UIViewController {
         passTextField.isSecureTextEntry = true
     }
     @objc func passButton(){
-        passTextField.isSecureTextEntry = false
+        isClicked = !isClicked
+        if (isClicked){
+            passTextField.isSecureTextEntry = false
+        } else {
+            passTextField.isSecureTextEntry = true
+        }
     }
     @IBAction func login(){
         
