@@ -43,7 +43,34 @@ class ViewController: UIViewController {
         }
     }
     @IBAction func login(){
+        if (loginTextField.text!.isEmpty || passTextField.text!.isEmpty){
+            let alert = UIAlertController(title: "ERROR", message: "Une condition n'est pas respectée", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in print("Touch Ok")
+            }))
+            present(alert, animated: true, completion: nil)
+        }else{
+            if ((loginTextField.text?.contains("@"))! && passTextField.text!.count >= 4){
+                if (switchBtn.isOn){
+                    let alert = UIAlertController(title: "Bienvenue \(String(describing: loginTextField.text))!", message: "Vous vous êtes inscris à la newsletter", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Merci !", style: .default, handler: {action in print("Touch Merci")
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }else{
+                    let alert = UIAlertController(title: "Bienvenue \( String(describing: loginTextField.text))!", message: "Vous ne vous êtes pas inscris à la newsletter", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "Merci !", style: .default, handler: {action in print("Touch Merci")
+                    }))
+                    present(alert, animated: true, completion: nil)
+                }
+            }else{
+                let alert = UIAlertController(title: "ERROR", message: "Une condition n'est pas respectée", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: {action in print("Touch Ok")
+                }))
+                present(alert, animated: true, completion: nil)
+            }
+            
+        }
         
     }
+    
 }
 
