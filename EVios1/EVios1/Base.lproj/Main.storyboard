@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7wO-yW-mha">
-                                <rect key="frame" x="118" y="69.000000000000014" width="157" height="157.33333333333337"/>
+                                <rect key="frame" x="118" y="89.000000000000014" width="157" height="157.33333333333337"/>
                                 <color key="backgroundColor" red="0.11071414432776722" green="0.5" blue="0.34361373444681786" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7wO-yW-mha" secondAttribute="height" id="7Lj-Qn-JZl"/>
@@ -31,7 +31,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rer-Ki-41V" secondAttribute="trailing" id="0mb-vo-6Tr"/>
-                            <constraint firstItem="7wO-yW-mha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="1tk-Qg-0kd"/>
+                            <constraint firstItem="7wO-yW-mha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1tk-Qg-0kd"/>
                             <constraint firstItem="rer-Ki-41V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3dj-R1-Lbz"/>
                             <constraint firstItem="7wO-yW-mha" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Atf-cq-GW2"/>
                             <constraint firstItem="rer-Ki-41V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JT9-AR-iaT"/>
@@ -40,6 +40,9 @@
                             <constraint firstItem="rer-Ki-41V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hlK-jV-Snw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="avatarContainer" destination="7wO-yW-mha" id="zIN-bc-COo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

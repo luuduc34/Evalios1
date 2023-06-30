@@ -9,10 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var avatarContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        avatarContainer.layer.cornerRadius = avatarContainer.frame.height / 2
     }
 
 
