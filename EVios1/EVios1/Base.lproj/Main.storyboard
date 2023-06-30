@@ -35,12 +35,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="it7-Yu-M0U">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Login" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="it7-Yu-M0U">
                                         <rect key="frame" x="10" y="38" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyK-wq-VJs">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyK-wq-VJs">
                                         <rect key="frame" x="10" y="86" width="353" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -51,7 +51,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-MJ-iqu">
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="1Tl-MJ-iqu">
                                         <rect key="frame" x="162" y="168.33333333333337" width="51" height="31"/>
                                     </switch>
                                 </subviews>
@@ -64,13 +64,22 @@
                                     <constraint firstItem="it7-Yu-M0U" firstAttribute="leading" secondItem="bhc-eV-FPu" secondAttribute="leading" constant="10" id="p5p-ot-UPj"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9H-hp-10N">
+                                <rect key="frame" x="78.666666666666671" y="743.66666666666663" width="235.66666666666663" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Login">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X9H-hp-10N" secondAttribute="bottom" constant="40" id="0UU-mN-zuU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rer-Ki-41V" secondAttribute="trailing" id="0mb-vo-6Tr"/>
                             <constraint firstItem="7wO-yW-mha" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="1tk-Qg-0kd"/>
                             <constraint firstItem="rer-Ki-41V" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="3dj-R1-Lbz"/>
+                            <constraint firstItem="X9H-hp-10N" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="8Xd-8O-7l0"/>
                             <constraint firstItem="7wO-yW-mha" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.4" id="Atf-cq-GW2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhc-eV-FPu" secondAttribute="trailing" constant="10" id="IBm-HZ-Jpr"/>
                             <constraint firstItem="rer-Ki-41V" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JT9-AR-iaT"/>
@@ -80,6 +89,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rer-Ki-41V" secondAttribute="bottom" id="d55-4D-GuN"/>
                             <constraint firstItem="rer-Ki-41V" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hlK-jV-Snw"/>
                             <constraint firstItem="bhc-eV-FPu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jFj-z9-pMv"/>
+                            <constraint firstItem="X9H-hp-10N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x0r-ud-IPw"/>
                         </constraints>
                     </view>
                     <connections>
